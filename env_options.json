@@ -1,0 +1,59 @@
+{
+  "environment_variables": [
+    {
+      "name": "MCP_API_URL",
+      "type": "string",
+      "default": "https://vds180.1cbit.ru/demo_erpuso_25/hs/AIExchangeAPI/",
+      "description": "Базовый URL 1C API. Конкретный метод добавляется в коде",
+      "required": true,
+      "validation": {
+        "format": "url"
+      },
+      "example": "https://vds180.1cbit.ru/demo_erpuso_25/hs/AIExchangeAPI/"
+    },
+    {
+      "name": "MCP_API_USERNAME",
+      "type": "string",
+      "default": "web",
+      "description": "Логин для Basic Auth",
+      "required": true,
+      "validation": {
+        "pattern": "^[^\\s]+$"
+      },
+      "example": "web"
+    },
+    {
+      "name": "MCP_API_PASSWORD",
+      "type": "string",
+      "default": "123",
+      "description": "Пароль для Basic Auth",
+      "required": true,
+      "example": "123"
+    },
+    {
+      "name": "MCP_HTTP_TIMEOUT_SECONDS",
+      "type": "float",
+      "default": 300,
+      "description": "Таймаут HTTP-запросов в секундах",
+      "required": false,
+      "validation": {
+        "min": 1,
+        "max": 3600
+      },
+      "example": 300
+    }
+  ],
+  "metadata": {
+    "version": "1.0.3",
+    "description": "Описание переменных окружения для MCP сервера 1C",
+    "usage": {
+      "docker": "Передавайте переменные через -e или --env-file",
+      "local": "Создайте файл .env в корне проекта или экспортируйте переменные в shell",
+      "example": ".env.example содержит примеры всех переменных"
+    },
+    "notes": [
+      "MCP_API_URL должен указывать на базовый путь API и оканчиваться на /",
+      "Логин и пароль берутся из MCP_API_USERNAME и MCP_API_PASSWORD"
+    ]
+  }
+}
