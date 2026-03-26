@@ -1,31 +1,26 @@
-# Hello World (Python)
+# MCP подключение к 1С через http
 
-This is a minimal "Hello World" Python project scaffolded by Copilot.
+ В основе используется FastMCP.
+
+ ## Список инструментов
+ -get_nomenclature_kinds_json
+ -get_nomenclature_details
+ -get_fixed_assets
+ -vendorinvoice
+ -serviceandassets
+ -bankaccountpaymentsoutgoing
+ -bankaccountpaymentsincoming
 
 ## Files
 
-- `hello.py` - simple script that prints "Hello, world!"
-- `tests/test_hello.py` - small unit test for `hello.py`
+- `src/server.py` - основной скрипт, где реализованы все инструменты
 
 ## Run
 
-1. Create and activate a virtual environment (optional but recommended):
+1. Run the script:
 
 ```powershell
-python -m venv .venv
-.\.venv\Scripts\Activate
-```
-
-2. Run the script:
-
-```powershell
-python hello.py
-```
-
-3. Run tests:
-
-```powershell
-python -m unittest discover -s tests
+python src/server.py
 ```
 
 ## License
