@@ -3,13 +3,13 @@
  В основе используется FastMCP.
 
  ## Список инструментов
- -get_nomenclature_kinds_json
- -get_nomenclature_details
- -get_fixed_assets
- -vendorinvoice
- -serviceandassets
- -bankaccountpaymentsoutgoing
- -bankaccountpaymentsincoming
+ - get_nomenclature_kinds_json
+ - get_nomenclature_details
+ - get_fixed_assets
+ - vendorinvoice
+ - serviceandassets
+ - bankaccountpaymentsoutgoing
+ - bankaccountpaymentsincoming
 
 ## Files
 
