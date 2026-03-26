@@ -3,13 +3,13 @@
     {
       "name": "MCP_API_URL",
       "type": "string",
-      "default": "https://vds180.1cbit.ru/demo_erpuso_25/hs/AIExchangeAPI/",
+      "default": "",
       "description": "Базовый URL 1C API. Конкретный метод добавляется в коде",
       "required": true,
       "validation": {
         "format": "url"
       },
-      "example": "https://vds180.1cbit.ru/demo_erpuso_25/hs/AIExchangeAPI/"
+      "example": "https://example.ru/demo_erpuso_25/hs/AIExchangeAPI/"
     },
     {
       "name": "MCP_API_USERNAME",

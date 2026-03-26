@@ -1,9 +1,9 @@
 [project]
 name = "mcp1ccloudru"
 version = "0.1.0"
-description = "MCP сервер для финансовых расчетов: кредиты, вклады и инвестиции"
+description = "MCP сервер для подключания к 1С через http"
 authors = [
-    {name = "adrianbaltat", email = "AABaltsatu@1cbit.ru"}
+    {name = "adrianbaltatu", email = "adrianbaltatu@mail.ru"}
 ]
 readme = "README.md"
 requires-python = ">=3.12,<4.0"
